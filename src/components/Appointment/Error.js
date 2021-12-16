@@ -1,5 +1,6 @@
 import React from "react";
 
+//Shows an error message if the input field isn't filled out correctly.
 export default function Error(props) {
   return (
     <main className="appointment__card appointment__card--error">

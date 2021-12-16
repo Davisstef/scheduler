@@ -1,5 +1,6 @@
 import React from "react";
 
+//Shows the newly created appointment card on the schedule.
 export default function Show(props) {
   return (
     <main className="appointment__card appointment__card--show">

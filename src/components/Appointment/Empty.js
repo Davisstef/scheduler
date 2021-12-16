@@ -1,5 +1,6 @@
 import React from "react";
 
+//Posts an add appointment button in empty slots.
 export default function Empty(props) {
   return (
     <main className="appointment__add">
