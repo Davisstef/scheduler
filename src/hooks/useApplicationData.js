@@ -10,7 +10,6 @@ export default function useApplicationData() {
   });
 
   const setDay = day => setState({ ...state, day });
-
   useEffect(() => {
     Promise.all([
       axios.get("/api/days"),
@@ -21,7 +20,6 @@ export default function useApplicationData() {
     })
   }, []);
 
-  // Adds an interview, updates db and state
   function bookInterview(id, interview) {
     const appointment = {
       ...state.appointments[id],
@@ -33,7 +31,6 @@ export default function useApplicationData() {
     };
    
     let updateSpots = state.days;
-    //Check to see if a new appointment is being made. If so the number of spots available decrease for that day.
     if (!state.appointments[id].interview) {
       updateSpots = state.days.map((day) => {
         if (day.appointments.includes(id)){
@@ -48,19 +45,16 @@ export default function useApplicationData() {
     .then(response => setState(state => ({ ...state, updateSpots, appointments})));
   };
 
-  // Cancels an interview, updates db and state
   function cancelInterview(id) {
     const appointment = {
       ...state.appointments[id],
       interview: null
     };
-
     const appointments = {
       ...state.appointments,
       [id]: appointment
     };
 
-    //Updating days to increase the interview spots available on the day where the interview is being deleted
     const updateSpots= state.days.map((day) => {
       if (day.appointments.includes(id)){
         day.spots ++
@@ -72,6 +66,5 @@ export default function useApplicationData() {
     return axios.delete(`/api/appointments/${id}`)
       .then(response => setState(state => ({ ...state, updateSpots, appointments})));
   };
-
   return { state, setDay, bookInterview,cancelInterview }
 };
