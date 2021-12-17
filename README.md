@@ -9,7 +9,7 @@ Install dependencies with `npm install`.
 ```sh
 npm start
 ```
-Fork and clone <a href="https://github.com/lighthouse-labs/scheduler-api">the Scheduler API</a> to start in the guest environment in addition to npm start. Follow the readme and run that file in conjunction with this while in the host environment. Set up is completed in the guest environment.
+Fork and clone <a href="https://github.com/lighthouse-labs/scheduler-api">the Scheduler API</a>. Follow the readme and run that file in conjunction with this while in the host environment. Set up is completed in the guest environment.
 
 ## Running Jest Test Framework
 
