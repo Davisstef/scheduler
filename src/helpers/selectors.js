@@ -1,4 +1,4 @@
-// Returns an array of appointment objects for the current day.
+// Returns an array of appointment objects for the current selected day
 export function getAppointmentsForDay(state, day) {
   const filteredAppointments = state.days.filter(d => d.name === day);
   let appointments = [];
@@ -9,7 +9,7 @@ export function getAppointmentsForDay(state, day) {
   return appointments;
 };
 
-// Returns the interview object for a given appointment slot.
+// Returns the interview object for the specific appointment slot
 export function getInterview(state, interview) {
   if (!interview) {
     return null
@@ -21,7 +21,7 @@ export function getInterview(state, interview) {
   return interviewObj;
 };
 
-// Returns an array of interviewer objects for the selected day.
+// Returns an array of interviewer objects for the current selected day
 
 export function getInterviewersForDay(state, day) {
   const filteredAppointments = state.days.filter(d => d.name === day);
@@ -33,3 +33,4 @@ export function getInterviewersForDay(state, day) {
   }
   return interviewers;
 };
+

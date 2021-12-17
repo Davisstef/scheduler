@@ -3,18 +3,18 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import "index.scss";
 import Button from "components/Button";
-import DayListItem from "components/DayListItem.js";
-import DayList from "components/DayList.js";
-import InterviewerListItem from "components/InterviewerListItem.js"
-import InterviewerList from "components/InterviewerList.js"
+import DayListItem from "components/DayListItem";
+import DayList from "components/DayList";
+import InterviewerListItem from "components/InterviewerListItem"
+import InterviewerList from "components/InterviewerList"
 import Appointment from "components/Appointment/index.js";
-import Header from "components/Appointment/Header.js"
-import Empty from "components/Appointment/Empty.js"
-import Show from "components/Appointment/Show.js"
-import Confirm from "components/Appointment/Confirm.js"
-import Status from "components/Appointment/Status.js"
-import Error from "components/Appointment/Error.js"
-import Form from "components/Appointment/Form.js"
+import Header from "components/Appointment/Header"
+import Empty from "components/Appointment/Empty"
+import Show from "components/Appointment/Show"
+import Confirm from "components/Appointment/Confirm"
+import Status from "components/Appointment/Status"
+import Error from "components/Appointment/Error"
+import Form from "components/Appointment/Form"
 import { Fragment } from 'react'
 
 storiesOf("Button", module)
