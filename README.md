@@ -9,7 +9,7 @@ Install dependencies with `npm install`.
 ```sh
 npm start
 ```
-Fork and clone https://web.compass.lighthouselabs.ca/activities/1004 scheduler API to start in the guest environment in addition to npm start.
+Fork and clone <a href="https://web.compass.lighthouselabs.ca/activities/1004">the Scheduler API</a> to start in the guest environment in addition to npm start.
 
 ## Running Jest Test Framework
 
