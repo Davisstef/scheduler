@@ -22,7 +22,7 @@ npm test
 ```sh
 npm run storybook
 ```
-##Screenshots
+## Screenshots
 ![Unknown](https://user-images.githubusercontent.com/60591525/146486890-9429e304-3579-4847-b1f4-ede776b211d0.png)
 
 ![Unknown3](https://user-images.githubusercontent.com/60591525/146486898-8a664a08-5cf0-4db7-9231-18b927fcbda8.png)
